@@ -11,7 +11,7 @@
 
     <artifactId>manong_manger_web</artifactId>
 
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <dependencies>
         <dependency>
             <groupId>com.kendinghui</groupId>
