@@ -15,7 +15,7 @@
     <dependencies>
         <dependency>
             <groupId>com.kendinghui</groupId>
-            <artifactId>manong_manger_services</artifactId>
+            <artifactId>manong_manger_service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

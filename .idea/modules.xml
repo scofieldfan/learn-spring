@@ -9,7 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/manong_manger/manong_manger.iml" filepath="$PROJECT_DIR$/manong_manger/manong_manger.iml" />
       <module fileurl="file://$PROJECT_DIR$/manong_manger/manong_manger_mapper/manong_manger_mapper.iml" filepath="$PROJECT_DIR$/manong_manger/manong_manger_mapper/manong_manger_mapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/manong_manger/manong_manger_pojo/manong_manger_pojo.iml" filepath="$PROJECT_DIR$/manong_manger/manong_manger_pojo/manong_manger_pojo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/manong_manger/manong_manger_services/manong_manger_services.iml" filepath="$PROJECT_DIR$/manong_manger/manong_manger_services/manong_manger_services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manong_manger/manong_manger_service/manong_manger_service.iml" filepath="$PROJECT_DIR$/manong_manger/manong_manger_service/manong_manger_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/manong_manger/manong_manger_web/manong_manger_web.iml" filepath="$PROJECT_DIR$/manong_manger/manong_manger_web/manong_manger_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/manong_parent/manong_parent.iml" filepath="$PROJECT_DIR$/manong_parent/manong_parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/manong_redis/manong_redis.iml" filepath="$PROJECT_DIR$/manong_redis/manong_redis.iml" />

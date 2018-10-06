@@ -10,6 +10,7 @@
         <module name="manong_common" />
         <module name="manong_manger_mapper" />
         <module name="manong_manger_pojo" />
+        <module name="manong_manger_service" />
         <module name="manong_manger_services" />
         <module name="manong_manger_web" />
         <module name="manong_redis" />
@@ -24,6 +25,7 @@
       <module name="manong_manger" target="1.8" />
       <module name="manong_manger_mapper" target="1.8" />
       <module name="manong_manger_pojo" target="1.8" />
+      <module name="manong_manger_service" target="1.8" />
       <module name="manong_manger_services" target="1.8" />
       <module name="manong_manger_web" target="1.8" />
       <module name="manong_parent" target="1.8" />

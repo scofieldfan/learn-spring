@@ -15,7 +15,7 @@
     <modules>
         <module>manong_manger_pojo</module>
         <module>manong_manger_mapper</module>
-        <module>manong_manger_services</module>
+        <module>manong_manger_service</module>
         <module>manong_manger_web</module>
     </modules>
 
