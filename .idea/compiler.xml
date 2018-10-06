@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="lesson1-helloworld" />
         <module name="manong_common" />
         <module name="manong_manger_mapper" />
         <module name="manong_manger_pojo" />
@@ -18,6 +19,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="lesson1-helloworld" target="1.8" />
       <module name="manong_common" target="1.8" />
       <module name="manong_manger" target="1.8" />
       <module name="manong_manger_mapper" target="1.8" />
