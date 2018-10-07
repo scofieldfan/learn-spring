@@ -17,6 +17,7 @@
         <module name="manong_rest" />
         <module name="manong_search" />
         <module name="manong_sso" />
+        <module name="spring-boot-helloworld" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,6 +34,7 @@
       <module name="manong_rest" target="1.8" />
       <module name="manong_search" target="1.8" />
       <module name="manong_sso" target="1.8" />
+      <module name="spring-boot-helloworld" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
