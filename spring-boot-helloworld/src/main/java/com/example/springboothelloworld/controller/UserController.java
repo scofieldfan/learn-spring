@@ -25,7 +25,7 @@ public class UserController {
         user.setName(properties.getTitle());
 
         String str = remoteProperties.getTitle();
-        System.out.println(str);
+        System.out.println("remote properties:"+str);
         return user;
 
     }
