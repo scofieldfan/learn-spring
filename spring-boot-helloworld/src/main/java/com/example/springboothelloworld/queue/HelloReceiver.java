@@ -1,4 +1,4 @@
-package com.example.springboothelloworld.Queue;
+package com.example.springboothelloworld.queue;
 
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;

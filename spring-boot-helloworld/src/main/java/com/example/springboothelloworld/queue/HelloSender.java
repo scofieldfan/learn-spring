@@ -1,4 +1,4 @@
-package com.example.springboothelloworld.Queue;
+package com.example.springboothelloworld.queue;
 
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

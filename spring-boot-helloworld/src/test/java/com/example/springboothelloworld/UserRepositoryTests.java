@@ -1,6 +1,6 @@
 package com.example.springboothelloworld;
 
-import com.example.springboothelloworld.Repository.UserRepository;
+import com.example.springboothelloworld.repository.UserRepository;
 import com.example.springboothelloworld.entity.User;
 import org.junit.Assert;
 import org.junit.Test;

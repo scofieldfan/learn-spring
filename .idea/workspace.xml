@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="febdaf06-7116-476e-b8d7-92b6eab61290" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/Queue/HelloReceiver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/Queue/HelloSender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/RabbitConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/RabbitMqHelloTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fan_learn/src/com/fan/leetcode/Problem26.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/task/Scheduler2Task.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/task/SchedulerTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/Queue/HelloReceiver.java" afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/queue/HelloReceiver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/Queue/HelloSender.java" afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/queue/HelloSender.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/Repository/UserRepository.java" afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/repository/UserRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-helloworld/log/spring.log" afterPath="$PROJECT_DIR$/spring-boot-helloworld/log/spring.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-helloworld/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-helloworld/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-helloworld/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/SpringBootHelloworldApplication.java" afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/SpringBootHelloworldApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/RabbitMqHelloTest.java" afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/RabbitMqHelloTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/UserRepositoryTests.java" afterPath="$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/UserRepositoryTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/manong_parent/target/" />
     <ignored path="$PROJECT_DIR$/manong_common/target/" />
@@ -51,105 +54,110 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RabbitConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/RabbitConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#335#336#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloSender.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/Queue/HelloSender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HelloReceiver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/Queue/HelloReceiver.java">
+        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/queue/HelloReceiver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringBootHelloworldApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/SpringBootHelloworldApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#420#421#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RabbitMqHelloTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/RabbitMqHelloTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpringBootHelloworldApplicationTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/SpringBootHelloworldApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRepositoryTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/UserRepositoryTests.java">
+      <file leaf-file-name="Scheduler2Task.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/task/Scheduler2Task.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="668">
-              <caret line="33" column="2" lean-forward="false" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+            <state relative-caret-position="207">
+              <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#418#419#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRedis.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/TestRedis.java">
+      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/repository/UserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="115">
+              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/pojo/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/entity/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KafkaConsumerConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/KafkaConsumerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+              <folding>
+                <element signature="e#2864#2865#0" expanded="true" />
+                <element signature="e#2901#2902#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Problem26.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fan_learn/src/com/fan/leetcode/Problem26.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KafkaTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/KafkaTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,14 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lesson1-helloworld/src/main/java/com/example/demo/DemoApplication.java" />
-        <option value="$PROJECT_DIR$/lesson1-helloworld/src/main/java/com/example/demo/HelloSpringboot.java" />
-        <option value="$PROJECT_DIR$/lesson1-helloworld/pom.xml" />
-        <option value="$PROJECT_DIR$/fan_learn/src/com/fan/datastructor/queue/ConLinkedQueue.java" />
-        <option value="$PROJECT_DIR$/fan_learn/src/com/fan/datastructor/queue/Consumer.java" />
-        <option value="$PROJECT_DIR$/fan_learn/src/com/fan/datastructor/queue/Producer.java" />
-        <option value="$PROJECT_DIR$/fan_learn/src/com/fan/datastructor/queue/LinkedBQueue.java" />
-        <option value="$PROJECT_DIR$/generatorSqlmapCustom/src/GeneratorSqlmap.java" />
         <option value="$PROJECT_DIR$/generatorSqlmapCustom/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/manong_manger/manong_manger_services/src/main/java/com/manong/service/UserService.java" />
         <option value="$PROJECT_DIR$/manong_manger/manong_manger_web/src/main/java/com/manong/controller/UserController.java" />
@@ -226,8 +226,6 @@
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/resources/config/remote.properties" />
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/WebConfiguration.java" />
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/pojo/User.java" />
-        <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/SpringBootHelloworldApplication.java" />
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/properties/NeoProperties.java" />
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/properties/RemoteProperties.java" />
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/SpringBootHelloworldApplicationTests.java" />
@@ -237,12 +235,22 @@
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/TestRedis.java" />
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/serializer/FastJsonRedisSerializer.java" />
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/spring-boot-helloworld/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/RabbitConfig.java" />
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/Queue/HelloReceiver.java" />
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/RabbitMqHelloTest.java" />
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/Queue/HelloSender.java" />
+        <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/KafkaProducerConfig.java" />
         <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/Listener.java" />
+        <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/KafkaConsumerConfig.java" />
+        <option value="$PROJECT_DIR$/spring-boot-helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/KafkaTest.java" />
+        <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/SpringBootHelloworldApplication.java" />
+        <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/task/SchedulerTask.java" />
+        <option value="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/task/Scheduler2Task.java" />
+        <option value="$PROJECT_DIR$/fan_learn/src/com/fan/leetcode/Probrem26.java" />
+        <option value="$PROJECT_DIR$/fan_learn/src/com/fan/leetcode/Problem26.java" />
       </list>
     </option>
   </component>
@@ -275,7 +283,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1440" />
     <option name="y" value="-517" />
     <option name="width" value="2560" />
@@ -299,98 +307,39 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="learn-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-helloworld" type="462c0819:PsiDirectoryNode" />
+              <item name="fan_learn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-helloworld" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-helloworld" type="462c0819:PsiDirectoryNode" />
+              <item name="fan_learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-helloworld" type="462c0819:PsiDirectoryNode" />
+              <item name="fan_learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="fan" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-helloworld" type="462c0819:PsiDirectoryNode" />
+              <item name="fan_learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-helloworld" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springboothelloworld" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-helloworld" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springboothelloworld" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-helloworld" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springboothelloworld" type="462c0819:PsiDirectoryNode" />
-              <item name="Queue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-helloworld" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-helloworld" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-helloworld" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-helloworld" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springboothelloworld" type="462c0819:PsiDirectoryNode" />
+              <item name="fan" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -430,11 +379,55 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RabbitMqHelloTest.hello">
+  <component name="RunManager" selected="Application.Problem26">
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
       <module name="lesson1-helloworld" />
+      <envs />
+    </configuration>
+    <configuration name="KafkaTest.send" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.example.springboothelloworld.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="spring-boot-helloworld" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.example.springboothelloworld" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springboothelloworld.KafkaTest" />
+      <option name="METHOD_NAME" value="send" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Problem26" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.fan.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.fan.leetcode.Problem26" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="fan_learn" />
       <envs />
     </configuration>
     <configuration name="RabbitMqHelloTest.hello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -462,30 +455,11 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SpringBootHelloworldApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.example.springboothelloworld.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="SpringBootHelloworldApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springboothelloworld.SpringBootHelloworldApplication" />
       <module name="spring-boot-helloworld" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.example.springboothelloworld" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springboothelloworld.SpringBootHelloworldApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
       <envs />
-      <patterns />
     </configuration>
     <configuration name="TestRedis.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -525,31 +499,6 @@
       <option name="PACKAGE_NAME" value="com.example.springboothelloworld" />
       <option name="MAIN_CLASS_NAME" value="com.example.springboothelloworld.TestRedis" />
       <option name="METHOD_NAME" value="testObj" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="UserRepositoryTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.example.springboothelloworld.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="spring-boot-helloworld" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.example.springboothelloworld" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springboothelloworld.UserRepositoryTests" />
-      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -667,22 +616,23 @@
         </option>
       </MavenSettings>
     </configuration>
-    <list size="7">
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Maven.manager" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.DemoApplication" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.SpringBootHelloworldApplicationTests.contextLoads" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.UserRepositoryTests.test" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestRedis.test" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TestRedis.testObj" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.RabbitMqHelloTest.hello" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.SpringBootHelloworldApplication" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestRedis.test" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestRedis.testObj" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.RabbitMqHelloTest.hello" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.KafkaTest.send" />
+      <item index="7" class="java.lang.String" itemvalue="Application.Problem26" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RabbitMqHelloTest.hello" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestRedis.testObj" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestRedis.test" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UserRepositoryTests.test" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SpringBootHelloworldApplicationTests.contextLoads" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Problem26" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.KafkaTest.send" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RabbitMqHelloTest.hello" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestRedis.testObj" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestRedis.test" />
       </list>
     </recent_temporary>
   </component>
@@ -704,51 +654,51 @@
       <workItem from="1538885762626" duration="13028000" />
       <workItem from="1539413579415" duration="2575000" />
       <workItem from="1539417306719" duration="4437000" />
-      <workItem from="1539592212182" duration="3509000" />
+      <workItem from="1539592212182" duration="8044000" />
+      <workItem from="1539674009159" duration="7387000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RabbitMqHelloTest_hello - 2018.10.15 at 16h 44m 20s.xml">
-      <configuration name="RabbitMqHelloTest.hello" configurationId="JUnit" />
+    <history-entry file="KafkaTest_send - 2018.10.15 at 19h 46m 43s.xml">
+      <configuration name="KafkaTest.send" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RabbitMqHelloTest_hello - 2018.10.15 at 16h 46m 38s.xml">
-      <configuration name="RabbitMqHelloTest.hello" configurationId="JUnit" />
+    <history-entry file="KafkaTest_send - 2018.10.15 at 19h 47m 56s.xml">
+      <configuration name="KafkaTest.send" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RabbitMqHelloTest_hello - 2018.10.15 at 16h 57m 15s.xml">
-      <configuration name="RabbitMqHelloTest.hello" configurationId="JUnit" />
+    <history-entry file="KafkaTest_send - 2018.10.15 at 19h 48m 53s.xml">
+      <configuration name="KafkaTest.send" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RabbitMqHelloTest_hello - 2018.10.15 at 17h 14m 24s.xml">
-      <configuration name="RabbitMqHelloTest.hello" configurationId="JUnit" />
+    <history-entry file="KafkaTest_send - 2018.10.15 at 19h 52m 02s.xml">
+      <configuration name="KafkaTest.send" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RabbitMqHelloTest_hello - 2018.10.15 at 17h 37m 34s.xml">
-      <configuration name="RabbitMqHelloTest.hello" configurationId="JUnit" />
+    <history-entry file="KafkaTest_send - 2018.10.15 at 19h 53m 42s.xml">
+      <configuration name="KafkaTest.send" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RabbitMqHelloTest_hello - 2018.10.15 at 17h 39m 40s.xml">
-      <configuration name="RabbitMqHelloTest.hello" configurationId="JUnit" />
+    <history-entry file="KafkaTest_send - 2018.10.15 at 19h 55m 08s.xml">
+      <configuration name="KafkaTest.send" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRedis_test - 2018.10.13 at 16h 43m 02s.xml">
-      <configuration name="TestRedis.test" configurationId="JUnit" />
+    <history-entry file="KafkaTest_send - 2018.10.15 at 19h 58m 02s.xml">
+      <configuration name="KafkaTest.send" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRedis_testObj - 2018.10.13 at 16h 25m 29s.xml">
-      <configuration name="TestRedis.testObj" configurationId="JUnit" />
+    <history-entry file="KafkaTest_send - 2018.10.15 at 19h 59m 25s.xml">
+      <configuration name="KafkaTest.send" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRedis_testObj - 2018.10.13 at 17h 00m 00s.xml">
-      <configuration name="TestRedis.testObj" configurationId="JUnit" />
+    <history-entry file="KafkaTest_send - 2018.10.15 at 20h 08m 58s.xml">
+      <configuration name="KafkaTest.send" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserRepositoryTests_test - 2018.10.07 at 17h 40m 41s.xml">
-      <configuration name="UserRepositoryTests.test" configurationId="JUnit" />
+    <history-entry file="KafkaTest_send - 2018.10.15 at 20h 09m 17s.xml">
+      <configuration name="KafkaTest.send" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71833000" />
+    <option name="totallyTimeSpent" value="83755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-517" width="2560" height="1417" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3255086" sideWeight="0.26186645" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3364632" sideWeight="0.3592116" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24738535" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -758,18 +708,19 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3685446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24256651" sideWeight="0.49034593" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24256651" sideWeight="0.4839099" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3364632" sideWeight="0.64078844" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3255086" sideWeight="0.73813355" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2775543" sideWeight="0.68465906" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2156074" sideWeight="0.68465906" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20344289" sideWeight="0.49356395" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35871157" sideWeight="0.3153409" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -777,7 +728,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -793,55 +743,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/manong_manger/manong_manger_pojo/src/main/java/com/manong/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manong_manger/manong_manger_pojo/src/main/java/com/manong/pojo/UserExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manong_manger/manong_manger_service/src/main/java/com/manong/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manong_manger/manong_manger_web/target/tomcat/conf/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2102">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manong_manger/manong_manger.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manong_manger/manong_manger_web/manong_manger_web.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manong_manger/manong_manger_web/src/main/java/com/manong/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manong_manger/manong_manger_web/src/main/resources/spring/applicationContext-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -951,13 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/spring-boot-helloworld.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.5.RELEASE/spring-boot-2.0.5.RELEASE.jar!/org/springframework/boot/web/servlet/FilterRegistrationBean.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -972,33 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/properties/RemoteProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/properties/NeoProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manong_manger/manong_manger_web/src/main/resources/properties/db.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1006,24 +873,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/resources/config/remote.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.10.RELEASE/spring-data-commons-2.0.10.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/Repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1048,39 +901,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/SpringBootHelloworldApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.10.RELEASE/spring-data-redis-2.0.10.RELEASE.jar!/org/springframework/data/redis/core/StringRedisTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/RabbitConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+            <element signature="e#335#336#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/spring-boot-helloworld.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="86" column="56" lean-forward="false" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/pojo/User.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/Listener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="230">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/KafkaProducerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="866">
+          <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/serializer/FastJsonRedisSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/resources/config/remote.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1092,50 +985,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/serializer/FastJsonRedisSerializer.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/RedisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <state relative-caret-position="556">
+          <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/RabbitConfig.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/properties/NeoProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="92">
+          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/TestRedis.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/properties/RemoteProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="161">
+          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/RedisConfig.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/queue/HelloSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+        <state relative-caret-position="253">
+          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1144,8 +1023,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/UserRepositoryTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="33" column="2" lean-forward="false" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+        <state relative-caret-position="506">
+          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/TestRedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="37" column="40" lean-forward="false" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1160,42 +1049,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/Queue/HelloSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/Queue/HelloReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/RabbitMqHelloTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="161">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/task/SchedulerTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#288#289#0" expanded="false" />
+            <element signature="e#367#368#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/task/Scheduler2Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/SpringBootHelloworldApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/KafkaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        <state relative-caret-position="46">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/queue/HelloReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/configuration/KafkaConsumerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="e#2864#2865#0" expanded="true" />
+            <element signature="e#2901#2902#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fan_learn/src/com/fan/leetcode/Problem26.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding />
         </state>
       </provider>

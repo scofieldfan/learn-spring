@@ -1,0 +1,1188 @@
+2018-10-16 15:54:43.215  INFO 90167 --- [main] c.e.s.SpringBootHelloworldApplication    : Starting SpringBootHelloworldApplication on MBC02V109EG8WN.local with PID 90167 (/Users/fan.zhang1/fan/learn-springboot/spring-boot-helloworld/target/classes started by fan.zhang1 in /Users/fan.zhang1/fan/learn-springboot)
+2018-10-16 15:54:43.217  INFO 90167 --- [main] c.e.s.SpringBootHelloworldApplication    : No active profile set, falling back to default profiles: default
+2018-10-16 15:54:43.266  INFO 90167 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3911c2a7: startup date [Tue Oct 16 15:54:43 CST 2018]; root of context hierarchy
+2018-10-16 15:54:43.970  INFO 90167 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-16 15:54:44.044  INFO 90167 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-16 15:54:44.064  INFO 90167 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springboothelloworld.repository.UserRepository.
+2018-10-16 15:54:44.404  INFO 90167 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$e6927047] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-16 15:54:44.484  INFO 90167 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$d94c1cf2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-16 15:54:44.538  INFO 90167 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12e05ec4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-16 15:54:44.577  INFO 90167 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.example.springboothelloworld.configuration.RedisConfig$$EnhancerBySpringCGLIB$$1e021030] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-16 15:54:44.999  INFO 90167 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-10-16 15:54:45.025  INFO 90167 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-16 15:54:45.025  INFO 90167 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-16 15:54:45.029  INFO 90167 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/fan.zhang1/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-10-16 15:54:45.142  INFO 90167 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-16 15:54:45.143  INFO 90167 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1876 ms
+2018-10-16 15:54:45.207  INFO 90167 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-16 15:54:45.208  INFO 90167 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'MyFilter' to urls: [/*]
+2018-10-16 15:54:45.208  INFO 90167 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'remoteIpFilter' to: [/*]
+2018-10-16 15:54:45.208  INFO 90167 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-16 15:54:45.373  INFO 90167 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-16 15:54:45.660  INFO 90167 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-16 15:54:45.700  INFO 90167 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-16 15:54:46.463  INFO 90167 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-16 15:54:46.982  INFO 90167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public com.example.springboothelloworld.pojo.User com.example.springboothelloworld.controller.UserController.say()
+2018-10-16 15:54:46.988  INFO 90167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-16 15:54:46.989  INFO 90167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-16 15:54:47.073  INFO 90167 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3911c2a7: startup date [Tue Oct 16 15:54:43 CST 2018]; root of context hierarchy
+2018-10-16 15:54:47.316  WARN 90167 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-16 15:54:48.146  INFO 90167 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-16 15:54:48.148  INFO 90167 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-16 15:54:48.156  INFO 90167 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-10-16 15:54:48.159  INFO 90167 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-16 15:54:48.161  INFO 90167 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-10-16 15:54:48.195  INFO 90167 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483547
+2018-10-16 15:54:48.221  INFO 90167 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 6000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-16 15:54:48.279  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 1.0.2
+2018-10-16 15:54:48.280  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : 2a121f7b1d402825
+2018-10-16 15:54:48.291  INFO 90167 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-16 15:54:48.295  INFO 90167 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 6000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-16 15:54:48.299  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 1.0.2
+2018-10-16 15:54:48.299  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : 2a121f7b1d402825
+2018-10-16 15:54:48.300  INFO 90167 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-16 15:54:48.301  INFO 90167 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 6000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-16 15:54:48.304  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 1.0.2
+2018-10-16 15:54:48.304  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : 2a121f7b1d402825
+2018-10-16 15:54:48.304  INFO 90167 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-16 15:54:48.305  INFO 90167 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 6000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-16 15:54:48.308  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 1.0.2
+2018-10-16 15:54:48.308  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : 2a121f7b1d402825
+2018-10-16 15:54:48.309  INFO 90167 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-16 15:54:48.309  INFO 90167 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 6000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-16 15:54:48.312  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 1.0.2
+2018-10-16 15:54:48.312  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : 2a121f7b1d402825
+2018-10-16 15:54:48.312  INFO 90167 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-16 15:54:48.313  INFO 90167 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 6000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-16 15:54:48.315  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 1.0.2
+2018-10-16 15:54:48.316  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : 2a121f7b1d402825
+2018-10-16 15:54:48.316  INFO 90167 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-16 15:54:48.317  INFO 90167 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 6000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-16 15:54:48.319  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 1.0.2
+2018-10-16 15:54:48.319  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : 2a121f7b1d402825
+2018-10-16 15:54:48.320  INFO 90167 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-16 15:54:48.320  INFO 90167 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 6000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-16 15:54:48.323  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 1.0.2
+2018-10-16 15:54:48.323  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : 2a121f7b1d402825
+2018-10-16 15:54:48.323  INFO 90167 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-16 15:54:48.324  INFO 90167 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 6000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-16 15:54:48.326  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 1.0.2
+2018-10-16 15:54:48.326  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : 2a121f7b1d402825
+2018-10-16 15:54:48.327  INFO 90167 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-16 15:54:48.327  INFO 90167 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 6000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-16 15:54:48.329  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 1.0.2
+2018-10-16 15:54:48.329  INFO 90167 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : 2a121f7b1d402825
+2018-10-16 15:54:48.329  INFO 90167 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-16 15:54:48.329  INFO 90167 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-10-16 15:54:48.334  INFO 90167 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2018-10-16 15:54:48.499  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.499  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.500  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.501  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.501  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.502  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.503  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.503  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.504  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.505  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.558  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.558  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.558  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.558  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.558  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.558  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.558  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.561  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.612  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.612  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.668  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.668  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.668  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.668  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.668  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.668  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.721  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.721  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.722  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.774  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.883  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.883  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.883  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.883  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.930  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.936  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.936  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.938  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.982  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:48.991  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:49.208  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:49.261  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:49.315  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:49.361  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:49.367  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:49.367  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:49.367  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:49.367  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:49.367  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:49.378  INFO 90167 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4cb702ce:0/SimpleConnection@4960d6c5 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 52762]
+2018-10-16 15:54:49.414  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:49.434  INFO 90167 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-10-16 15:54:49.457  INFO 90167 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-10-16 15:54:49.461  INFO 90167 --- [main] c.e.s.SpringBootHelloworldApplication    : Started SpringBootHelloworldApplication in 6.677 seconds (JVM running for 7.638)
+2018-10-16 15:54:49.904  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:50.012  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:50.060  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:50.110  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:50.168  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:50.219  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:50.223  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:50.225  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:50.277  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:50.328  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:51.075  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:51.075  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:51.084  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:51.132  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:51.190  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:51.193  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:51.237  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:51.286  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:51.340  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:51.450  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:52.046  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:52.092  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:52.100  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:52.108  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:52.141  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:52.255  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:52.305  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:52.417  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:52.467  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:52.575  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:52.910  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:53.007  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:53.134  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:53.328  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:53.382  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:53.382  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:53.382  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:53.382  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:53.490  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:53.596  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:53.827  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:54.139  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:54.206  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:54.244  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:54.351  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:54.457  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:54.457  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:54.565  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:54.565  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:54.672  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:54.898  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:55.256  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:55.273  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:55.309  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:55.416  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:55.416  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:55.528  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:55.630  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:55.737  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:55.801  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:55.808  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:56.121  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:56.174  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:56.292  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:56.336  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:56.336  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:56.391  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:56.821  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:56.872  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:56.872  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:56.984  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:57.088  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:57.247  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:57.300  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:57.300  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:57.475  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:57.514  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:57.723  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:57.938  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:58.004  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:58.004  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:58.043  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:58.164  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:58.164  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:58.256  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:58.548  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:58.575  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:58.575  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:58.947  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:59.005  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:59.028  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:59.028  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:59.082  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:59.082  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:59.214  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:59.538  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:59.646  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:59.669  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:59.864  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:59.917  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:54:59.991  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:00.202  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:00.244  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:00.254  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:00.310  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:00.508  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:00.725  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:00.897  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:00.997  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:01.068  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:01.103  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:01.123  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:01.155  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:01.230  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:01.284  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:01.476  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:01.814  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:01.953  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:01.953  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:01.979  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:02.147  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:02.200  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:02.220  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:02.274  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:02.308  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:02.593  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:02.730  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:02.914  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:03.053  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:03.077  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:03.077  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:03.106  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:03.130  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:03.160  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:03.504  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:03.539  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:03.826  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:03.860  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:03.967  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:04.180  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:04.209  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:04.264  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:04.285  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:04.317  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:04.532  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:04.638  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:04.658  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:04.874  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:04.980  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:05.232  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:05.246  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:05.248  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:05.285  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:05.393  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:05.445  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:05.499  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:05.617  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:05.832  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:05.940  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:06.141  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:06.191  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:06.266  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:06.352  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:06.373  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:06.461  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:06.679  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:06.697  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:06.697  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:06.750  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:07.053  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:07.344  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:07.372  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:07.372  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:07.477  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:07.504  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:07.608  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:07.663  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:07.876  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:07.909  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:08.069  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:08.409  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:08.546  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:08.566  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:08.578  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:08.603  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:08.603  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:08.729  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:08.790  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:09.039  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:09.187  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:09.538  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:09.560  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:09.590  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:09.720  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:09.720  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:09.799  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:09.799  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:09.799  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:10.260  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:10.268  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:10.472  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:10.580  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:10.704  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:10.740  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:10.757  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:10.757  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:10.919  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:10.973  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:11.291  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:11.440  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:11.442  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:11.604  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:11.609  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:11.609  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:11.772  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:11.824  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:11.921  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:11.984  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:12.366  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:12.501  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:12.513  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:12.553  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:12.689  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:12.719  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:12.728  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:12.783  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:12.822  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:12.994  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:13.330  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:13.513  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:13.590  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:13.623  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:13.644  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:13.678  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:13.721  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:13.849  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:13.859  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:13.999  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:14.402  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:14.423  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:14.500  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:14.533  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:14.587  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:14.607  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:14.854  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:14.854  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:14.863  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:14.928  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:15.416  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:15.520  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:15.609  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:15.717  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:15.718  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:15.736  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:15.772  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:15.933  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:15.953  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:16.042  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:16.274  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:16.594  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:16.702  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:16.799  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:16.799  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:16.799  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:16.799  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:16.853  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:17.082  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:17.137  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:17.285  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:17.673  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:17.714  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:17.780  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:17.923  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:17.923  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:17.977  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:17.977  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:17.995  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:18.158  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:18.356  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:18.628  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:18.748  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:18.748  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:18.899  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:19.004  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:19.113  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:19.113  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:19.122  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:19.383  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:19.389  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:19.490  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:19.603  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:19.816  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:19.976  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:20.030  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:20.085  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:20.139  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:20.245  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:20.408  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:20.462  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:20.462  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:20.675  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:20.944  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:20.944  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:20.944  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:21.105  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:21.267  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:21.321  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:21.429  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:21.483  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:21.700  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:21.806  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:21.912  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:22.018  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:22.126  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:22.126  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:22.180  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:22.283  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:22.391  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:22.553  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:22.770  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:22.875  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:22.927  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:22.980  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:23.083  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:23.136  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:23.242  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:23.402  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:23.402  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:23.722  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:23.776  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:23.882  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:23.898  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:24.098  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:24.100  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:24.153  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:24.156  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:24.575  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:24.578  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:24.737  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:24.895  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:24.903  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:25.008  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:25.077  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:25.167  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:25.220  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:25.330  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:25.487  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:25.648  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:25.705  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:25.809  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:25.866  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:26.237  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:26.237  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:26.239  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:26.259  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:26.450  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:26.503  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:26.503  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:26.826  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:26.880  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:27.097  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:27.205  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:27.343  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:27.367  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:27.420  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:27.420  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:27.690  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:27.690  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:27.745  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:27.907  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:28.174  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:28.174  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:28.174  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:28.280  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:28.314  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:28.442  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:28.758  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:28.867  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:28.867  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:28.931  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:29.135  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:29.175  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:29.188  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:29.243  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:29.349  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:29.463  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:29.777  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:29.939  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:29.951  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:30.044  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:30.098  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:30.254  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:30.259  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:30.349  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:30.467  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:30.486  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:30.791  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:30.898  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:31.001  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:31.082  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:31.109  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:31.162  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:31.322  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:31.428  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:31.473  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:31.512  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:31.917  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:31.917  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:31.971  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:31.992  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:32.240  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:32.240  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:32.242  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:32.284  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:32.293  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:32.366  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:32.777  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:32.850  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:32.937  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:32.991  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:33.150  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:33.204  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:33.312  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:33.312  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:33.467  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:33.540  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:33.837  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:33.855  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:33.996  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:34.103  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:34.111  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:34.165  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:34.220  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:34.260  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:34.420  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:34.711  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-10, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:34.850  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:34.904  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-3, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:35.025  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-7, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:35.078  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:35.090  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:35.225  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:35.237  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:35.279  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-5, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:35.360  INFO 90167 --- [Thread-16] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3911c2a7: startup date [Tue Oct 16 15:54:43 CST 2018]; root of context hierarchy
+2018-10-16 15:55:35.362  INFO 90167 --- [Thread-16] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-10-16 15:55:35.366  INFO 90167 --- [Thread-16] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2018-10-16 15:55:35.436  WARN 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=test] Connection to node -1 could not be established. Broker may not be available.
+2018-10-16 15:55:35.592  INFO 90167 --- [Thread-16] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2018-10-16 15:55:35.593  INFO 90167 --- [Thread-16] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483547
+2018-10-16 15:55:35.596  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-16 15:55:35.596  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-16 15:55:35.596  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-16 15:55:35.596  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-16 15:55:35.596  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-16 15:55:35.596  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-16 15:55:35.596  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-16 15:55:35.596  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-16 15:55:35.596  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-16 15:55:35.596  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-16 15:55:35.600  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-16 15:55:35.600  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-6-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-16 15:55:35.601  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-7-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-16 15:55:35.602  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-16 15:55:35.602  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-16 15:55:35.603  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-16 15:55:35.604  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-8-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-16 15:55:35.604  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-9-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-16 15:55:35.605  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-16 15:55:35.606  INFO 90167 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-16 15:55:35.606  INFO 90167 --- [Thread-16] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-10-16 15:55:35.609  INFO 90167 --- [Thread-16] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2018-10-16 15:55:35.609  INFO 90167 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-16 15:55:35.610  INFO 90167 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-16 15:55:35.623  INFO 90167 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-16 15:55:35.624  INFO 90167 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-16 15:55:35.626  INFO 90167 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

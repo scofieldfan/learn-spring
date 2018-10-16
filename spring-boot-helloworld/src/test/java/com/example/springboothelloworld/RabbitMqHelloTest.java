@@ -1,6 +1,6 @@
 package com.example.springboothelloworld;
 
-import com.example.springboothelloworld.Queue.HelloSender;
+import com.example.springboothelloworld.queue.HelloSender;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
