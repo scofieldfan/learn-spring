@@ -29,7 +29,7 @@
         <spring-version>4.3.3.RELEASE</spring-version>
         <druid-version>1.0.9</druid-version>
         <mysql-version>5.1.32</mysql-version>
-        <jackson-databing-version>2.6.4</jackson-databing-version>
+        <jackson-databing-version>2.9.10.8</jackson-databing-version>
     </properties>
 
     <dependencyManagement>
